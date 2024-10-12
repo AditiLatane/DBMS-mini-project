@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title</title>
+    <style>
+        /* Basic CSS reset for consistent styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styling the top horizontal navbar */
+        .top-navbar {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            height: 15%;
+        }
+
+        /* Title in the horizontal navbar */
+        .top-navbar h1 {
+            margin: 0;
+        }
+
+        /* Login button in the horizontal navbar */
+        .top-navbar a.login {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #04AA6D;
+            border-radius: 5px;
+        }
+
+        .top-navbar a.login:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Styling the vertical sidebar navbar */
+        .sidebar {
+            /* background-color: #333; */
+            width: 200px;
+            height: 100vh;
+            position:fixed;
+            top: 60px; /* Make sure it's below the horizontal navbar */
+            left: 0;
+            padding-top: 20px;
+        }
+
+        /* Styling the sidebar links */
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 16px;
+            text-align: left;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+            color: white;
+        }
+
+        /* Active link in the sidebar */
+        .sidebar a.active {
+            background-color: #04AA6D;
+            color: white;
+            text-align: center;
+        }
+
+        /* Content styling */
+        .content {
+            margin-left: 220px; 
+            margin-top: 80px; 
+            padding: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+<!-- Horizontal Top Navbar -->
+<div class="top-navbar">
+    <h1>AI Webinae Participants</h1>
+    <a href="admin.php" class="login">Logout</a>
+</div>
+
+<!-- Vertical Sidebar Navbar -->
+<div class="sidebar">
+    <a href="login.php" class="active">Insert</a>
+</div>
+
+</body>
+</html>
